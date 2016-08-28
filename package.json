@@ -1,0 +1,14 @@
+{
+  "name": "basic-webpack-setup",
+  "version": "0.0.1",
+  "description": "Basic webpack setup.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack ./index.js bundle.js"
+  },
+  "author": "Mathias Dorn",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
