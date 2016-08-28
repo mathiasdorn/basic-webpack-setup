@@ -4,11 +4,12 @@
   "description": "Basic webpack setup.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack ./index.js bundle.js"
+    "start": "webpack-dev-server ./index.js"
   },
   "author": "Mathias Dorn",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
   }
 }
