@@ -1,3 +1,3 @@
-require("./styles/style.css");
+require("./styles/style.scss");
 
 alert("Welcome to webpack")
