@@ -1,8 +1,15 @@
+var debug = process.env.NODE_ENV !== "production";
+var webpack = require('webpack');
+
 module.exports = {
-  entry: "./index.js",
+  devtool: debug ? "inline-sourcemap" : null,
+  entry: {
+    css: "./styles/app.scss",
+    js:  "./js/app.js"                  
+  },
   output: {
     path: __dirname,
-    filename: "bundle.js"
+    filename: "[name].min.js"
   },
   module: {
     loaders: [
@@ -13,3 +20,9 @@ module.exports = {
     ]
   }
 }
+
+//plugins: debug ? [] : [
+//  new webpack.optimize.DedupePlugin(),
+//  new webpack.optimize.OccurenceOrderPlugin(),
+//  new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+//]

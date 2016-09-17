@@ -4,7 +4,7 @@
   "description": "Basic webpack setup.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server ./index.js"
+    "start": "webpack-dev-server"
   },
   "author": "Mathias Dorn",
   "license": "MIT",
